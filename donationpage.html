@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--daisyUI-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--taiwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+    .lexend-font{
+        font-family: "Lexend", sans-serif;}
+    </style>
+
+</head>
+<body class="lexend-font">
+  <header>
+    <header class=" top-10 z-10 sticky backdrop-blur-lg bg-opacity-90">
+
+      <!--navbar-->
+      <nav class=" bg-[#F9F7F3] px-20 lg:px-5 pt-5 pb-10 ">
+          <div class="flex flex-col lg:flex-row items-center lg:justify-between">
+               <button id="blog-btn" class="bg-[#B4F461] ml-20 mt-4 w-24 h-10 rounded-lg text-[#111111] font-bold lexend-font" >Blog</button>
+              <div class=" flex items-center mt-2 -ml-12 gap-2">
+                  <img src="assets/logo.png" >
+                  <p class="lexend-font font-bold  mt-4 text-[#111111]">Donate Bangladesh</p>
+              </div>
+              <div class=" mr-20 mt-3 flex items-center gap-2">
+                  <img src="assets/coin.png" >
+                  <p class="text-[#111111] opacity-60 font-medium lexend-font">5500 BDT</p>
+              </div>
+           </div>
+      </nav>
+
+      <!--options-->
+      <div class="flex gap-4 justify-center mt-12 -ml-16 mb-10">
+          <button id="donate-btn" class="bg-[#B4F461] w-32 h-12 border rounded-lg text-[#111111] font-semibold lexend-font">Donation</button>
+          <button id="history-btn" class=" w-32 h-12 opacity-90 rounded-lg border-2">History</button>
+      </div>
+  </header>
+  </header>
+    
+</body>
+</html>
