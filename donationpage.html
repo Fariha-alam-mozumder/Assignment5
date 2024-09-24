@@ -41,7 +41,7 @@
       <!--navbar-->
       <nav class=" bg-[#F9F7F3] px-20 lg:px-24  pt-5 pb-8 ">
           <div class="flex flex-col lg:flex-row items-center lg:justify-between">
-               <button  class="bg-[#B4F461] ml-20 mt-4 w-24 h-10 rounded-lg text-[#111111] font-bold lexend-font" >Blog</button>
+               <button id="blog" class="bg-[#B4F461] ml-20 mt-4 w-24 h-10 rounded-lg text-[#111111] font-bold lexend-font" >Blog</button>
               <div class=" flex items-center mt-2 -ml-12 gap-2">
                   <img src="assets/logo.png" >
                   <p class="lexend-font font-bold  mt-4 text-[#111111]">Donate Bangladesh</p>
@@ -139,6 +139,12 @@
 
     <!--history-->
      <div class="hidden"></div>
+
+     <script>
+      document.getElementById('blog').addEventListener('click',function(){
+        window.location.href='blogpage.html';
+      })
+     </script>
 
 
   </main>
