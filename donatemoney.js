@@ -9,7 +9,7 @@ function calculatedamount(inputamount, prevbdt) {
 
     const maintaka = document.getElementById('mainamount').innerText;
     const mainbalance = parseFloat(maintaka);
-    const total = mainbalance - currentbdt;
+    const total = mainbalance - amountNumber;
     document.getElementById('mainamount').innerText = total;
          return currentbdt;
 }
@@ -53,22 +53,22 @@ document.getElementById('ndonatebox').addEventListener('click', function(event) 
 
 
 //donation-for-feni
-document.getElementById('ndonatebox').addEventListener('click', function(event) {
+document.getElementById('fdonatebox').addEventListener('click', function(event) {
     event.preventDefault();
-    const prevbdt = document.getElementById('nbdt').innerText; 
-    const inputamount = document.getElementById('namount').value;
-    if (isNaN(inputamount) || inputamount === "") {
+    const fprevbdt = document.getElementById('fbdt').innerText; 
+    const finputamount = document.getElementById('famount').value;
+    if (isNaN(finputamount) || finputamount === "") {
         alert('Invalid donation amount');
     } else {
-        const totalbdt = calculatedamount(inputamount, prevbdt); 
-        document.getElementById('nbdt').innerText = totalbdt; 
+        const ftotalbdt = calculatedamount(finputamount, fprevbdt); 
+        document.getElementById('fbdt').innerText = ftotalbdt; 
 
         // showing history
         const div = document.createElement('div'); 
         div.classList.add('border', 'rounded-xl', 'px-5', 'py-5', 'mx-16');
         const date = new Date().toLocaleString(); 
         div.innerHTML = `
-            <h4 class="text-lg lg:text-xl font-bold">${inputamount} taka is Donated for Famine-2024 at Noakhali, Bangladesh</h4>
+            <h4 class="text-lg lg:text-xl font-bold">${finputamount} taka is Donated for Famine-2024 at Noakhali, Bangladesh</h4>
             <p class="text-black opacity-70 text-sm">${date}</p>`;
         document.getElementById('hist').appendChild(div);
         
@@ -80,32 +80,6 @@ document.getElementById('ndonatebox').addEventListener('click', function(event) 
 
 
 
-
-//donation-for-quota
-document.getElementById('ndonatebox').addEventListener('click', function(event) {
-    event.preventDefault();
-    const prevbdt = document.getElementById('nbdt').innerText; 
-    const inputamount = document.getElementById('namount').value;
-    if (isNaN(inputamount) || inputamount === "") {
-        alert('Invalid donation amount');
-    } else {
-        const totalbdt = calculatedamount(inputamount, prevbdt); 
-        document.getElementById('nbdt').innerText = totalbdt; 
-
-        // showing history
-        const div = document.createElement('div'); 
-        div.classList.add('border', 'rounded-xl', 'px-5', 'py-5', 'mx-16');
-        const date = new Date().toLocaleString(); 
-        div.innerHTML = `
-            <h4 class="text-lg lg:text-xl font-bold">${inputamount} taka is Donated for Famine-2024 at Noakhali, Bangladesh</h4>
-            <p class="text-black opacity-70 text-sm">${date}</p>`;
-        document.getElementById('hist').appendChild(div);
-        
-        //modal appearance
-        modaldiv.showModal();
-        
-    }
-});
 
 
 
