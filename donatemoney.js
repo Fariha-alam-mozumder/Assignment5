@@ -82,4 +82,34 @@ document.getElementById('fdonatebox').addEventListener('click', function(event) 
 
 
 
+//donation-for-quota
+document.getElementById('qdonatebox').addEventListener('click', function(event) {
+    event.preventDefault();
+    const prevbdt = document.getElementById('qbdt').innerText; 
+    const inputamount = document.getElementById('qamount').value;
+    if (isNaN(inputamount) || inputamount === "") {
+        alert('Invalid donation amount');
+    } else {
+        const totalbdt = calculatedamount(inputamount, prevbdt); 
+        document.getElementById('qbdt').innerText = totalbdt; 
+
+        // showing history
+        const div = document.createElement('div'); 
+        div.classList.add('border', 'rounded-xl', 'px-5', 'py-5', 'mx-16');
+        const date = new Date().toLocaleString(); 
+        div.innerHTML = `
+            <h4 class="text-lg lg:text-xl font-bold">${inputamount} taka is Donated for Famine-2024 at Noakhali, Bangladesh</h4>
+            <p class="text-black opacity-70 text-sm">${date}</p>`;
+        document.getElementById('hist').appendChild(div);
+        
+        //modal appearance
+        modaldiv.showModal();
+        
+    }
+});
+
+
+
+
+
 
