@@ -102,6 +102,7 @@ document.getElementById('qdonatebox').addEventListener('click', function(event) 
             <p class="text-black opacity-70 text-sm">${date}</p>`;
         document.getElementById('hist').appendChild(div);
         
+        
         //modal appearance
         modaldiv.showModal();
         

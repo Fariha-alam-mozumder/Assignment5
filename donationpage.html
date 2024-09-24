@@ -39,14 +39,14 @@
     <header class=" top-0 z-10 sticky backdrop-blur-xl  bg-opacity-90">
 
       <!--navbar-->
-      <nav class=" bg-[#F9F7F3] px-20 lg:px-24  pt-5 pb-8 ">
-          <div class="flex flex-col lg:flex-row items-center lg:justify-between">
-               <button id="blog" class="bg-[#B4F461] ml-20 mt-4 w-24 h-10 rounded-lg text-[#111111] font-bold lexend-font" >Blog</button>
-              <div class=" flex items-center mt-2 -ml-12 gap-2">
+      <nav class=" bg-[#F9F7F3] px-16 lg:px-24  pt-5 pb-8 ">
+          <div class="flex flex-row lg:flex-row items-center lg:justify-between">
+               <button id="blog" class="bg-[#B4F461] lg:ml-20 -ml-12 mt-4  lg:w-24 h-10 rounded-lg text-[#111111] font-bold lexend-font" >Blog</button>
+              <div class=" flex items-center mt-2 lg:-ml-12 ml-12 gap-2">
                   <img src="assets/logo.png" >
                   <p class="lexend-font font-bold  mt-4 text-[#111111]">Donate Bangladesh</p>
               </div>
-              <div class=" mr-20 mt-3 flex items-center gap-2">
+              <div class=" lg:mr-20 ml-16 mt-3 flex items-center gap-2">
                   <img src="assets/coin.png" >
                   <p id="mainamount" class="text-[#111111] opacity-60 font-medium lexend-font">5500</p>
                   <p class="text-[#111111] opacity-60 font-medium lexend-font"> BDT</p>
@@ -55,7 +55,7 @@
       </nav>
 
       <!--options-->
-      <div class="flex gap-4 justify-center mt-12 -ml-16 mb-5 ">
+      <div class="flex gap-4 justify-center mt-12 lg:-ml-16 mb-5 ">
           <button id="donation" class="bg-[#B4F461] w-32 h-12 -mt-4 border rounded-lg text-[#111111] font-semibold lexend-font">Donation</button>
           <button id="history" class=" w-32 h-12 opacity-90 -mt-4 mb-7 rounded-lg border-2">History</button>
       </div>
@@ -65,29 +65,29 @@
   <main>
        <div id="donation-div">
       <!--card1-->
-      <div class="flex max-w-6xl  flex-col mt-20 lg:flex-row justify-center mx-44 lg:mx-30 px-2 lg:px-8 py-5 lg:py-10 gap-7 flex-1  border rounded-2xl">
+      <div class="flex max-w-6xl  flex-col mt-20 lg:flex-row justify-center mx-4 lg:mx-44 lg:mx-30 px-2 lg:px-8 py-5 lg:py-10 gap-7 flex-1  border rounded-2xl">
           <div class="max-w-lg h-3/4 px-5 ">
           <img src="assets/noakhali.png">
          </div>
-          <div class="flex flex-col justify-center max-w-lg">
-            <div class="flex bg-slate-100 h-10 px-2 rounded-lg w-32 items-center gap-1 mb-7">
+          <div class="flex flex-col justify-center mx-4 max-w-lg">
+            <div class="flex bg-slate-100 h-10 px-2  rounded-lg w-32 items-center gap-1 mb-7">
                   <img src="assets/coin.png" >
-                  <p id="nbdt" class="opacity-60">0 </p>
+                  <p id="nbdt" class="opacity-60">1000 </p>
                   <p  class="opacity-60"> BDT</p>
            </div>
             <h4 class="text-black font-bold text-xl mb-3">Donate for Flood at Noakhali, Bangladesh</h4>
-            <p class="text-black opacity-70 text-justify text-sm mb-7"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+            <p class="text-black opacity-70 text-justify text-sm mb-7"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
               <input id="namount" class="border rounded-md h-10 px-3 font-light text-base " required type="text" placeholder="Write Donation Amount">
               <button  id="ndonatebox" type="submit" class="bg-[#B4F461] h-12 rounded-lg text-[#111111] font-semibold mt-5">Donate Now</button>
         </div>
       </div>
 
       <!--card2-->
-      <div class="flex max-w-6xl  flex-col mt-8 lg:flex-row justify-center mx-44 lg:mx-30 px-2 lg:px-8 py-5 lg:py-10 gap-7 flex-1  border rounded-2xl">
+      <div class="flex max-w-6xl  flex-col mt-8 lg:flex-row justify-center mx-4 lg:mx-44 lg:mx-30 px-2 lg:px-8 py-5 lg:py-10 gap-7 flex-1  border rounded-2xl">
         <div class="max-w-lg h-3/4 px-5 ">
         <img src="assets/feni.png">
        </div>
-        <div class="flex flex-col justify-center max-w-lg">
+        <div class="flex flex-col justify-center mx-4 max-w-lg">
           <div class="flex bg-slate-100 h-10 px-2 rounded-lg w-32 items-center gap-1 mb-7">
                 <img src="assets/coin.png" >
                 <p id="fbdt" class="opacity-60">600 </p>
@@ -101,11 +101,11 @@
     </div>
 
       <!--card3-->
-      <div class="flex max-w-6xl  flex-col mt-8 lg:flex-row justify-center mx-44 lg:mx-30 px-2 lg:px-8 py-5 lg:py-10 gap-7 flex-1  border rounded-2xl">
+      <div class="flex max-w-6xl  flex-col mt-8 lg:flex-row justify-center mx-4 lg:mx-44 lg:mx-30 px-2 lg:px-8 py-5 lg:py-10 gap-7 flex-1  border rounded-2xl">
         <div class="max-w-lg h-3/4 px-5 ">
         <img src="assets/quota-protest.png">
        </div>
-        <div class="flex flex-col justify-center max-w-lg">
+        <div class="flex flex-col justify-center mx-4 max-w-lg">
           <div class="flex bg-slate-100 h-10 px-2 rounded-lg w-32 items-center gap-1 mb-7">
                 <img src="assets/coin.png" >
                 <p id="qbdt" class="opacity-60">2400</p>
@@ -143,9 +143,9 @@
       </div>
     </dialog>
   
-  <div id="hist" class=" flex flex-col mx-auto gap-5 ">
+    <div id="hist" class=" flex flex-col hidden  mx-auto gap-5 ">
 
-  </div>
+    </div>
 
   </main>
 
@@ -159,16 +159,25 @@
                      window.location.href='blogpage.html';})
 
      //adding funtionality
+     document.getElementById('donation').addEventListener('click',function(){
+          document.getElementById('donation-div').classList.remove('hidden');
+          document.getElementById('donation').classList.add('bg-[#B4F461]');
+          document.getElementById('history').classList.remove('bg-[#B4F461]');
+          document.getElementById('hist').classList.add('hidden');
+        
+          
+           
+        })
       document.getElementById('history').addEventListener('click',function(){
+        document.getElementById('hist').classList.remove('hidden');
           document.getElementById('donation-div').classList.add('hidden');
           document.getElementById('donation').classList.remove('bg-[#B4F461]');
           document.getElementById('history').classList.add('bg-[#B4F461]');
-          document.getElementById('modalbox').classList.add('hidden');})
+          document.getElementById('modalbox').classList.add('hidden');
+          
+        })
 
-      document.getElementById('donation').addEventListener('click',function(){
-          document.getElementById('donation-div').classList.remove('hidden');
-          document.getElementById('donation').classList.add('bg-[#B4F461]');
-          document.getElementById('history').classList.remove('bg-[#B4F461]'); })
+    
      
          
           
